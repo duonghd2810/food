@@ -1,0 +1,67 @@
+@media screen and (max-width: 991px) {
+  .header,
+  .header.fixed {
+    padding: 10px 20px;
+  }
+  .header__nav {
+    display: none;
+  }
+  .header__nav-item {
+    margin-left: 0;
+  }
+  .header__nav-link {
+    font-size: 2rem;
+    color: #111;
+  }
+  .header__nav.active {
+    width: 100%;
+    height: calc(100% - 55px);
+    position: fixed;
+    top: 55px;
+    left: 0;
+    background: #fff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+  }
+  .menuToogle {
+    position: relative;
+    width: 40px;
+    height: 40px;
+    background: url("../img/menu.png");
+    background-size: 30px;
+    background-repeat: no-repeat;
+    background-position: center;
+    cursor: pointer;
+  }
+  .menuToogle.active {
+    background: url("../img/close.png");
+    background-size: 20px;
+    background-repeat: no-repeat;
+    background-position: center;
+    cursor: pointer;
+  }
+  .header.fixed .menuToogle {
+    filter: invert(1);
+  }
+  section {
+    padding: 60px 40px 0;
+  }
+  .about {
+    flex-direction: column;
+  }
+  .about-content,
+  .img-about {
+    width: 100%;
+  }
+  .about-content p {
+    margin-top: 10px;
+  }
+  .img-about {
+    margin-top: 30px;
+  }
+  .menu-content {
+    margin-top: 20px;
+  }
+}
